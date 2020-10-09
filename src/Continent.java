@@ -1,9 +1,9 @@
 
 public enum Continent {
 
-  NORTH_AMERICA (23, 24709000),
+  NORTH_AMERICA (23, 247090001),
   // ...
-  EUROPE (50, 39310000);
+  EUROPE (50, 393100000);
 
   public int countryCount;  // Noncompliant
   private int landMass;
