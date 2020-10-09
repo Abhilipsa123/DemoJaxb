@@ -6,9 +6,10 @@ import java.security.spec.ECGenParameterSpec;
 import javax.crypto.KeyGenerator;
 
 public class SecondClasslogin {
-    
+    String[] values ;
     public static void main(String[] args) {
     KeyPairGenerator keyPairGen1 = null;
+    
     try {
         keyPairGen1 = KeyPairGenerator.getInstance("RSA");
     } catch (NoSuchAlgorithmException e1) {
@@ -41,4 +42,9 @@ public class SecondClasslogin {
     }
     keyGen1.init(64); // Noncompliant  
 }
+ // Note that values is a String array in the code below.
+    //
+    public void setValues(String[] somevalues) {
+            this.values = somevalues;
+    }
 }
