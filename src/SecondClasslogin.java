@@ -42,5 +42,16 @@ public class SecondClasslogin {
     }
     keyGen1.init(64); // Noncompliant  
     }
+    // Note that values is a String array in the code below.
+    //
+    public void setValues(String[] somevalues) {
+            this.values = somevalues;
+    
+    try {
+        /* ... */
+      } catch(Exception e) {
+        e.printStackTrace();        // Noncompliant
+      }
    
+}
 }
