@@ -46,5 +46,11 @@ public class SecondClasslogin {
     //
     public void setValues(String[] somevalues) {
             this.values = somevalues;
-    }
+    
+    try {
+        /* ... */
+      } catch(Exception e) {
+        e.printStackTrace();        // Noncompliant
+      }
+}
 }
