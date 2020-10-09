@@ -41,8 +41,8 @@ public class SecondClasslogin {
         e.printStackTrace();
     }
     keyGen1.init(64); // Noncompliant  
-}
- // Note that values is a String array in the code below.
+    }
+    // Note that values is a String array in the code below.
     //
     public void setValues(String[] somevalues) {
             this.values = somevalues;
@@ -52,5 +52,6 @@ public class SecondClasslogin {
       } catch(Exception e) {
         e.printStackTrace();        // Noncompliant
       }
+
 }
 }
